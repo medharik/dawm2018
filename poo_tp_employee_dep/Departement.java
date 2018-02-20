@@ -2,13 +2,15 @@ package poo_tp_employee_dep;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
-public class Departement {
+public  class Departement {
 private String nom,adresse;
 private ArrayList<Employee> listEmployees;
 public String getNom() {
 	return nom;
 }
+
 public void setNom(String nom) {
 	this.nom = nom;
 }
@@ -21,6 +23,7 @@ public void setAdresse(String adresse) {
 public ArrayList<Employee> getListEmployees() {
 	return listEmployees;
 }
+
 public void setListEmployees(ArrayList<Employee> listEmployees) {
 	this.listEmployees = listEmployees;
 }
@@ -38,7 +41,7 @@ public Departement(String nom, String adresse) {
 	this.nom = nom;
 	this.adresse = adresse;
 }
-private double getMasse() {
+public double getMasse() {
 	double somme =0;
 for (int i = 0; i < listEmployees.size(); i++) {
 	somme +=listEmployees.get(i).getSalaire();
