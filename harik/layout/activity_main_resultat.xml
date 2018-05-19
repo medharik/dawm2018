@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_resultat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+ android:background="@drawable/back2"
+    android:gravity="center"
+
+    tools:context="com.harik.intens.MainActivityResultatA">
+
+    <TextView
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:text="Entrer un prix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        android:background="#000"
+        android:textColor="#FFF"
+        android:id="@+id/edPrixresultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<Button
+    android:text="Convertir en ..."
+    android:id="@+id/btnresultat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

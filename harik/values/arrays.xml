@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<array name="menu">
+    <item>Page web</item>
+    <item>Appel téléphonique</item>
+    <item>SMS</item>
+    <item>VOS contacts</item>
+    <item>Votre positions</item>
+    <item>camera</item>
+    <item>Emails</item>
+    <item>Activité for result</item>
+    <item>Liste view tableau </item>
+    <item> List View Personalisé</item>
+    <item>Maps</item>
+    <item>Liste view Peronnalisée</item>
+    <item>WEBVIEW</item>
+    <item>Listview webview  + filter</item>
+</array>
+</resources>
