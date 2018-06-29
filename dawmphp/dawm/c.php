@@ -8,8 +8,8 @@ switch ($a) {
 $chemin="";
 	if(isset($_FILES)){
 $chemin=charger($_FILES['photo'], "images");
-	}
-			ajouter($libelle, $prix,$chemin);
+}
+			ajouter($libelle, $prix,$categorie_id,$chemin);
 			
 		break;
 

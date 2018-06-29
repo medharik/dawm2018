@@ -39,7 +39,7 @@ extract($_GET);//$n
 		<table align="center">
 			<tr>
 				<td>libellé</td>
-				<td><input type="text" name="libelle"></td>
+				<td><input required="" type="text" name="libelle"></td>
 			</tr>
 			<tr>
 				<td>prix</td>
@@ -47,7 +47,28 @@ extract($_GET);//$n
 			</tr>
 			<tr>
 				<td>Photo </td>
-				<td><input type="file" name="photo"></td>
+				<td><input type="file" required="" name="photo"></td>
+			</tr>
+			<tr>
+				<td>Marques </td>
+				<td>
+<input type="text" list="liste" required="" name="categorie_id">
+
+	<datalist  id="liste" >
+	<option value=""  selected="" >Choisissez une marque</option>
+
+
+<?php $marques=getall('marque'); ?>
+<?php foreach ($marques as $m): ?>
+	<option value="<?=$m['id'] ?>"> 
+		<?=$m['nom'];  ?>
+	</option>
+<?php endforeach ?>
+	
+
+					</datalist>
+
+				</td>
 			</tr>
 			<tr>
 				<td></td>
